@@ -1,5 +1,6 @@
 ---
-import { Navigation } from "../../src/"
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
 import '../styles/global.css'
 const pagaTitle = "Blog"
 ---
@@ -12,7 +13,7 @@ const pagaTitle = "Blog"
 		<title>{pagaTitle}</title>
 	</head>
 	<body>
-        <Navigation/>
+        <Header/>
 
 		<h1>My Astro Learning Blog</h1>
 
@@ -23,5 +24,6 @@ const pagaTitle = "Blog"
             <li><a href="/posts/post-2/">Post 2</a></li>
             <li><a href="/posts/post-3/">Post 3</a></li>
         </ul>
+		<Footer/>
     </body>
 </html>

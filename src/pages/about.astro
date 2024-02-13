@@ -1,6 +1,6 @@
 ---
 import '../styles/global.css'
-
+import Header from "../components/Header.astro"
 const pageTitle = "About Me";
 
 const identify = {
@@ -46,9 +46,7 @@ const textCase = "uppercase"
     
     <!-- CUERPO DE LA PAGINA -->
 	<body>
-        <a href="/">Home</a>
-        <a href="/about">About me</a>
-        <a href="/blog">Blog</a>
+        <Header/>
 		<h1>{pageTitle}</h1>
 
         <h2>... and my new Astro site!</h2>
